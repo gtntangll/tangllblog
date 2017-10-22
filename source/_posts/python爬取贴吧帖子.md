@@ -12,7 +12,7 @@ tags: [技术分享]
 本文参考:[静觅](http://cuiqingcai.com/)博客python实战系列
 
 
----
+------
 #### 二、页面的抓取
 >目标网页网址为https://tieba.baidu.com/p/2196794546
 满足可以选择是否只看楼主的抓取我们点一下 **只看楼主** 并点一下后页的链接来获取只看楼主和翻页的参数
@@ -75,7 +75,7 @@ def __init__(self,baseUrl,seeLZ):
 ```html
 <h3 class="core_title_txt pull-left text-overflow  " title="【长篇连载】剑网3的正史和野史——从头开始讲剧情故事" style="width: 416px">【长篇连载】剑网3的正史和野史——从头开始讲剧情故事</h3>
 ```
-我们将提取此<h3>里的文本则正则表达式为:
+我们将提取此h3里的文本则正则表达式为:
 ```python
 <h3 class="core_title_txt.*?>(.*?)</h3>
 ```
